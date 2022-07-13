@@ -12,10 +12,12 @@ class Ball(Turtle):
         self.y_move = 10
 
     def move(self):
-        if self.ycor() > 250 or self.ycor() < -250:
-            self.y_move *= -1
-
-        if self.xcor() > 350 or self.xcor() < -350:
-            self.x_move *= -1
-
         self.goto(self.xcor() + self.x_move,self.ycor()+self.y_move)
+
+    def bounce(self):
+        # if self.ycor() > 250 or self.ycor() < -250:
+        self.y_move *= -1
+
+        # if self.xcor() > 350 or self.xcor() < -350:
+        #     self.x_move *= -1
+
