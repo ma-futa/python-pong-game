@@ -2,9 +2,9 @@ from turtle import Turtle
 
 
 class Paddle(Turtle):
-    def __init__(self,position ):
+    def __init__(self,position):
         super().__init__()
-        self.shapesize(stretch_wid=5 ,stretch_len=1,outline=1)
+        self.shapesize(stretch_wid=5 ,stretch_len=1)
         self.penup()
         self.speed('fastest')
         self.color('white')
